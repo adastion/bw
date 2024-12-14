@@ -9,39 +9,67 @@
 </head>
 
 <body>
-  <header class=".bg-dark">
-    <div class="">
-      <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand fw-bold" href="#">
-            Бренд
-          </a>
-          <div>
-            <button type="button" class="btn btn-primary">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-telephone-fill" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                  d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
-              </svg>
-            </button>
-            <button type="button" class="btn btn-light border">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
-                viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
-              </svg>
-            </button>
+  <header class="w-100 fixed-top">
+    <nav class="navbar bg-body-tertiary fixed-top navbar-expand-md ">
+      <div class="container-fluid ">
+        <a class="navbar-brand fw-bold" href="#">Бренд</a>
+        <div class="d-flex flex-md-row-reverse gap-2 flex-md-grow-1">
+          <button type="button" class="custom-btn btn btn-primary w-auto">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" fill="currentColor"
+              class="bi bi-telephone-fill mb-1" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+            </svg>
+            <span class="d-none d-md-inline-block">Заказать звонок</span>
+          </button>
+          <button class="custom-btn navbar-toggler px-2" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Меню</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 fw-semibold">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Каталог</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Цены</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
   </header>
-  <section class="video">
-    <div class="container-fluid"></div>
-    <video autoplay muted loop>
+  <section class="w-100 min-vh-100 overflow-hidden position-relative">
+    <div class="container text-center d-flex position-absolute z-1">
+      <h1 class="h1 text-light-emphasis">Купить <a class="text-danger" href="#">товар</a> с доставкой</h1>
+      <h2 class="h2 text-light-emphasis fw-bold">Офицальный поставщик <a class="text-danger link-underline-light"
+          href="#">товаров</a> в
+        стране!
+      </h2>
+    </div>
+    <video class="vh-100 object-fit-cover w-100 position-absolute" autoplay muted loop>
       <source src="video/bg.mp4" type="video/mp4">
     </video>
   </section>
+  <h2>asdAS</h2>
+  <h2>asdAS</h2>
+  <h2>asdAS</h2>
+  <h2>asdAS</h2>
+  <h2>asdAS</h2>
+  <h2>asdAS</h2>
+  <h2>asdAS</h2>
 </body>
 
 </html>
