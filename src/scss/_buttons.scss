@@ -1,0 +1,9 @@
+$btn-border-width: 3rem;
+
+.btn {
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem;
+  border-bottom-left-radius: 2rem;
+  width: $btn-border-width;
+}

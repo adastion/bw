@@ -33,6 +33,26 @@ module.exports = {
         }
       },
       {
+        test: /\.html$/,
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: "html-loader",
+            options: {
+              sources: {
+                list: [
+                  {
+                    tag: "source",
+                    attribute: "src",
+                    type: "src"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      {
         test: /\.(scss)$/,
         use: [
           {
@@ -57,9 +77,10 @@ module.exports = {
           {
             // Loads a SASS/SCSS file and compiles it to CSS
             loader: 'sass-loader'
-          }
+          },
+
         ]
       }
     ]
-  }
+  },
 }
