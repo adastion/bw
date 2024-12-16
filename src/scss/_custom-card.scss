@@ -1,0 +1,12 @@
+@include media-breakpoint-up(md) {
+  .custom-card {
+    width: 32.36%;
+    width: 48.85%;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .custom-card {
+    width: 32.36%;
+  }
+}

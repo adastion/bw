@@ -14,7 +14,7 @@
       <div class="container-fluid ">
         <a class="navbar-brand fw-bold" href="#">Бренд</a>
         <div class="d-flex flex-md-row-reverse gap-2 flex-md-grow-1">
-          <button type="button" class="custom-btn btn btn-primary w-auto" data-bs-toggle="modal"
+          <button type="button" class="custom-btn btn btn-primary w-auto px-3" data-bs-toggle="modal"
             data-bs-target="#callBackModal">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" fill="currentColor"
               class="bi bi-telephone-fill mb-1" viewBox="0 0 16 16">
@@ -23,11 +23,10 @@
             </svg>
             <span class="d-none d-md-inline-block">Заказать звонок</span>
           </button>
-          <button class="custom-btn navbar-toggler px-2" type="button" data-bs-toggle="offcanvas"
+          <button class="custom-btn navbar-toggler" type="button" data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-
           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
@@ -40,7 +39,7 @@
                   <a class="nav-link active" aria-current="page" href="#">Главная</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Каталог</a>
+                  <a class="nav-link" href="#cotalogSection">Каталог</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Цены</a>
@@ -53,20 +52,103 @@
     </nav>
   </header>
   <section class="custom-video-bg w-100 min-vh-100 overflow-hidden position-relative">
-    <div
-      class="container-sm d-flex flex-column justify-content-center text-center min-vw-100 vh-100 position-absolute z-1">
-      <h1 class="h1 text-light">Купить <a class="text-danger link-underline link-underline-opacity-0" href="#">товар</a>
-        с доставкой</h1>
-      <h2 class="h2 text-light fw-bold">Офицальный поставщик <a
-          class="text-danger link-underline link-underline-opacity-0" href="#">товаров</a> в
-        стране!
-      </h2>
+    <div class="container 
+      d-flex flex-column 
+      justify-content-around
+      align-items-center
+      vh-100
+      min-vw-100
+      position-absolute z-1">
+      <div class="mt-5 w-75 text-center text-md-start">
+        <h1 class="h1 mb-2 text-light fw-lighter">Купить <a class="text-danger link-underline link-underline-opacity-0"
+            href="#">товар</a>
+          с доставкой</h1>
+        <p class="fs-4 text-light fw-bold">Офицальный поставщик <a
+            class="text-danger link-underline link-underline-opacity-0" href="#">товаров</a> в
+          Стране!
+        </p>
+      </div>
+      <div class="w-75 d-flex gap-2 flex-column flex-md-row align-items-center justify-content-md-between">
+        <button class="btn btn-secondary custom-btn-secondary custom-btn btn-lg fw-bold px-5 py-3 mb-3"
+          data-bs-toggle="modal" data-bs-target="#callBackModal">Заказать звонок
+        </button>
+        <p class="text-light text-center text-md-start">Ваши данные <br> под надежной защитой</p>
+      </div>
     </div>
     <video class="vh-100 object-fit-cover w-100 position-absolute" autoplay muted loop>
       <source src="video/bg.mp4" type="video/mp4">
     </video>
   </section>
-  <div>cotalog</div>
+  <section id="cotalogSection">
+    <div class="bg-dark p-3 mb-5 w-100">
+      <h3 class="fs-3 fw-semibold text-center text-light">Каталог</h3>
+    </div>
+    <ul class="container d-flex grid-i gap-5 gap-md-3 flex-wrap list-unstyled">
+      <li class="custom-card card justify-content-between col-md-4">
+        <a href="#" class="link-underline link-underline-opacity-0 text-black">
+          <picture>
+            <img src="https://gitrequests.github.io/interview-bootstrap/assets/image.webp" class="card-img-top"
+              alt="cover-card">
+          </picture>
+          <div class="card-body">
+            <h5 class="card-title">Товар 1</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <ul>
+              <li>An item</li>
+              <li>A second item</li>
+              <li>A third item</li>
+            </ul>
+          </div>
+          <footer class="card-footer">
+            <a href="#" class="btn btn-primary custom-btn btn-sm float-end w-100 py-2">Купить</a>
+          </footer>
+        </a>
+      </li>
+      <li class="custom-card card justify-content-between col-md-4">
+        <a href="#" class="link-underline link-underline-opacity-0 text-black">
+          <picture>
+            <img src="https://gitrequests.github.io/interview-bootstrap/assets/image.webp" class="card-img-top"
+              alt="cover-card">
+          </picture>
+          <div class="card-body">
+            <h5 class="card-title">Товар 2</h5>
+          </div>
+          <footer class="card-footer">
+            <a href="#" class="btn btn-primary custom-btn btn-sm float-end w-100 py-2">Купить</a>
+          </footer>
+        </a>
+      </li>
+      <li class="custom-card card justify-content-between col-md-4">
+        <a href="#" class="link-underline link-underline-opacity-0 text-black">
+          <picture>
+            <img src="https://gitrequests.github.io/interview-bootstrap/assets/image.webp" class="card-img-top"
+              alt="cover-card">
+          </picture>
+          <div class="card-body">
+            <h5 class="card-title">Товар 2</h5>
+          </div>
+          <footer class="card-footer">
+            <a href="#" class="btn btn-primary custom-btn btn-sm float-end w-100 py-2">Купить</a>
+          </footer>
+        </a>
+      </li>
+      <li class="custom-card card justify-content-between col-md-4">
+        <a href="#" class="link-underline link-underline-opacity-0 text-black">
+          <picture>
+            <img src="https://gitrequests.github.io/interview-bootstrap/assets/image.webp" class="card-img-top"
+              alt="cover-card">
+          </picture>
+          <div class="card-body">
+            <h5 class="card-title">Товар 2</h5>
+          </div>
+          <footer class="card-footer">
+            <a href="#" class="btn btn-primary custom-btn btn-sm float-end w-100 py-2">Купить</a>
+          </footer>
+        </a>
+      </li>
+    </ul>
+  </section>
   <div class="modal fade" id="callBackModal" tabindex="-1" aria-labelledby="callBackLabel" aria-hidden="true">
     <div class="modal-dialog z-3">
       <div class="modal-content">
@@ -78,7 +160,8 @@
           ...
         </div>
         <div class="modal-footer">
-          <button type="button" class="custom-btn btn btn-secondary custom-btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="custom-btn btn btn-secondary custom-btn-secondary"
+            data-bs-dismiss="modal">Close</button>
           <button type="button" class="custom-btn btn btn-primary">Save changes</button>
         </div>
       </div>
