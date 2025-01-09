@@ -1,6 +1,12 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+// color map extensions  
+@import "./custom-variables";
+
 // Import all of Bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
 
-@import "./buttons";
+@import "./custom-rounded";
 @import "./custom-card";
 @import "./custom-video-bg";

@@ -1,0 +1,7 @@
+$border-radius-pill: 2.7rem;
+
+$custom-color: (
+  "accent": $purple-600
+);
+
+$theme-colors: map-merge($theme-colors, $custom-color);
